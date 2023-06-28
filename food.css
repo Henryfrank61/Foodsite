@@ -100,12 +100,12 @@ body {
 .container {
   position:relative;
   text-align: left;
-  margin-bottom:-200px;
+  width:100%;
+  margin-bottom:-4%;
 }
 .top_left1{
   position: absolute;
   top: 15%;
-  left: 16px;
   font-family: 'Times New Roman', Times, serif;
   font-weight:bolder; 
   font-size: 150%;
@@ -184,6 +184,33 @@ body {
   font-weight: 1200;
   color: #f35626;
 }
+.fa {
+  padding: 20px;
+  font-size: 20px;
+  width:30px;
+  text-align: center;
+  text-decoration: none;
+  
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook {
+  color: rgb(10, 10, 10);
+}
+
+/* Twitter */
+.fa-twitter {
+  
+  color: rgb(7, 7, 7);
+}
+
   #ukwu{
     background-color: #8f5304;
     clear:both;
