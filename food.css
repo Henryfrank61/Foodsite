@@ -136,10 +136,12 @@ body {
     border-radius: 25px;
 }
 .container3{
-  position:sticky;
-  background-color:whitesmoke;
-  margin: 20%;
-  margin-top: 170px;
+  float:left;
+  width:550px;
+  background-color:rgba(75, 34, 122, 0.425);
+  margin: 0%;
+  padding: 10px;
+  border-radius: 25px;
 }
 #pic1{
  text-align: center; 
@@ -150,6 +152,7 @@ body {
   font-size: larger;
   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-weight: 900;
+  color: #efefef;
 }
 #pic2{
  text-align: center;
@@ -160,6 +163,7 @@ body {
   font-size: larger;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-weight: 900;
+  color: #efefef;
 }
 #pic3{
   text-align: center;
@@ -170,12 +174,14 @@ body {
   font-size: larger;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-weight: 900;
+  color:#efefef;
 }
 #text{
   font-family:fantasy;
   font-weight:2000;
   font-size:x-large;
   color: rgb(122, 31, 92); 
+  background-color: #4e1515;
 }
 #book{
   text-align: right;
@@ -208,11 +214,24 @@ body {
 /* Twitter */
 .fa-twitter {
   
-  color: rgb(7, 7, 7);
+  color: rgb(7, 7, 7);2
+}
+#aside_vid{
+  float:left;
+  width:400px;
+  margin-left: 65%;
+  margin-top: -25%;
+  padding:20px;
+  height: 400px;
+  background-color: #ccc;
+}
+#vid{
+  margin-top:15%;
+  margin-left: 30%;
 }
 
   #ukwu{
-    background-color: #8f5304;
+    background-color: #5a3504;
     clear:both;
     border-top: 2px solid rgb(247, 241, 241);
     text-align: center;
