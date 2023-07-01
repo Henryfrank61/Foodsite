@@ -136,52 +136,36 @@ body {
     border-radius: 25px;
 }
 .container3{
-  float:left;
-  width:550px;
-  background-color:rgba(75, 34, 122, 0.425);
-  margin: 0%;
-  padding: 10px;
-  border-radius: 25px;
+  display:inline-flex;
+  max-height: 100%;
+  margin:5%;
 }
 #pic1{
- text-align: center; 
+ 
 }
-#ban{
-  text-align: left;
-  padding-left: 10%;
-  font-size: larger;
-  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  font-weight: 900;
-  color: #efefef;
+#vid{
+margin-right: 3%;
 }
 #pic2{
- text-align: center;
-}
-#meat{
-  text-align: left;
-  padding-left: 10%;
-  font-size: larger;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  font-weight: 900;
-  color: #efefef;
+
+
 }
 #pic3{
-  text-align: center;
+  
 }
-#nsala{
-  text-align: left;
-  padding-left: 10%;
-  font-size: larger;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  font-weight: 900;
-  color:#efefef;
+#abt_us{
+  text-align: center;
+  font-size: x-large;
+  font-weight: 2000;
+  color: rgb(126, 78, 23);
+  font-family:fantasy;
 }
 #text{
-  font-family:fantasy;
-  font-weight:2000;
-  font-size:x-large;
-  color: rgb(122, 31, 92); 
-  background-color: #4e1515;
+  text-align: center;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  font-weight:1500;
+  font-size:larger;
+  color: rgb(7, 6, 7); 
 }
 #book{
   text-align: right;
@@ -214,22 +198,8 @@ body {
 /* Twitter */
 .fa-twitter {
   
-  color: rgb(7, 7, 7);2
+  color: rgb(7, 7, 7);
 }
-#aside_vid{
-  float:left;
-  width:400px;
-  margin-left: 65%;
-  margin-top: -25%;
-  padding:20px;
-  height: 400px;
-  background-color: #ccc;
-}
-#vid{
-  margin-top:15%;
-  margin-left: 30%;
-}
-
   #ukwu{
     background-color: #5a3504;
     clear:both;
