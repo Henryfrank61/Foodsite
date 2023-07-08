@@ -178,7 +178,7 @@ body {
   width:calc(350px * 8);
   animation: scroll 40s linear infinite;
 }
-.slide-track:hover{
+.slide_track:hover{
   animation-play-state: paused;
 }
 @keyframes scroll {
@@ -186,7 +186,7 @@ body {
     transform: translateX(0);
   }
   100%{
-    transform:translateX(calc(-350px*8));
+    transform:translateX(calc(-320px*8));
   }
   
 }

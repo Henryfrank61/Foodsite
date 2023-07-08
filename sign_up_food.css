@@ -6,7 +6,7 @@ body{
     align-items: center;
     min-height: 100vh;
     font-family: 'jost', sans-serif;
-    background: linear-gradient(to bottom, #8d601b, #180d07, #97560b);
+    background: linear-gradient(to bottom, #815b21, #4e3120, #815b21);
 }
 .main{
     width: 350px;
@@ -54,7 +54,7 @@ button{
     justify-content: center;
     display: block;
     color:#fff;
-    background: #573b8a;
+    background: #665f59;
     font-size: 1em;
     font-weight: bold;
     margin-top: 20px;
@@ -88,5 +88,14 @@ button.hover{
     transform: scale(.6);
 }
 #nnoo{
-    color:rgba(232, 235, 241, 0.473);
+    text-align: center;
+    font-size: large;
+    font-weight: 600;
+    color: #d8d4d0;
+}
+#ukwu1{
+
+    clear:both;
+    margin-top: 5%;
+    text-align: center;
 }
