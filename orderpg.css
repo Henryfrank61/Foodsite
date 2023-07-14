@@ -1,0 +1,18 @@
+body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+.logo{
+    text-align: center;
+    background-color: orange;
+    width:initial;
+    height: 100px;
+}
+.welcome{
+    text-align: left;
+    background-color: bisque;
+    font-size: medium;
+    font-weight: 500;
+    font-family: cursive;
+}
