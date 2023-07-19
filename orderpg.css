@@ -1,18 +1,211 @@
 body{
-    margin: 0;
-    padding: 0;
-    height: 100%;
+ height: 100;
+ margin:0%;
 }
-.logo{
-    text-align: center;
-    background-color: orange;
-    width:initial;
-    height: 100px;
-}
+  
+  .nav {
+    margin-top: 0%;
+    height: 70px;
+    width: 100%;
+    background-color:coral;
+    position:relative;
+    z-index: 999;
+  }
+  
+  .nav > .nav-header {
+    display: inline;
+  }
+  
+  .nav > .nav-header > .nav-title {
+    display: inline-block;
+    font-size: 22px;
+    color: #fff;
+    padding: 10px 10px 10px 10px;
+  }
+  
+  .nav > .nav-btn {
+    display: none;
+  }
+  
+  .nav > .nav-links {
+    display: inline;
+    float: right;
+    font-size: 18px;
+  }
+  
+  .nav > .nav-links > a {
+    display: inline-block;
+    padding: 13px 10px 13px 10px;
+    text-decoration: none;
+    color: #efefef;
+  }
+  
+  .nav > .nav-links > a:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  
+  .nav > #nav-check {
+    display: none;
+  }
+  
+  @media (max-width:600px) {
+    .nav > .nav-btn {
+      display: inline-block;
+      position: absolute;
+      right: 0px;
+      top: 0px;
+    }
+    .nav > .nav-btn > label {
+      display: inline-block;
+      width: 50px;
+      height: 0px;
+      padding: 13px;
+    }
+    .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
+      background-color: rgba(0, 0, 0, 0.3);
+    }
+    .nav > .nav-btn > label > span {
+      display: block;
+      width: 25px;
+      height: 10px;
+      border-top: 2px solid #eee;
+    }
+    .nav > .nav-links {
+      position: absolute;
+      display: block;
+      width: 100%;
+      background-color: #333;
+      height: 0px;
+      transition: all 0.3s ease-in;
+      overflow-y: hidden;
+      top: 50px;
+      left: 0px;
+    }
+    .nav > .nav-links > a {
+      display: block;
+      width: 100%;
+    }
+    .nav > #nav-check:not(:checked) ~ .nav-links {
+      height: 0px;
+    }
+    .nav > #nav-check:checked ~ .nav-links {
+      height: calc(100vh - 50px);
+      overflow-y: auto;
+    }
+  }
 .welcome{
     text-align: left;
     background-color: bisque;
     font-size: medium;
     font-weight: 500;
-    font-family: cursive;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding-top: 2px;
 }
+.slider{
+  height:250px;
+  margin:auto;
+  position:relative;
+  width:90%;
+  display: grid;
+  place-items: center;
+  overflow:hidden;
+
+}
+.slide_track{
+  display:flex;
+  width:calc(250px * 14);
+  animation: scroll 40s linear infinite;
+}
+.slide_track:hover{
+  animation-play-state: paused;
+}
+@keyframes scroll{
+  0%{
+    transform: translatex(0);
+  }
+  100%{
+    transform:translateX(calc(-250px * 7));
+  }
+}
+.food{
+  height:200px;
+  width:250px;
+  display:flex;
+  align-items: center;
+  padding: 15px;
+  perspective:100px;
+  position:relative;
+  text-align: center;
+
+
+}
+img{
+  width:100%;
+  transition: transform 1;
+}
+img:hover{
+  transform:translatez(20px);
+}
+.slider::before,
+.slider::after{
+  background: linear-gradient(to right, rgba(255,255,255.1) 0%
+  rgba(255,255,255,0) 10%);
+  content:'';
+  height:100%;
+  position: absolute;
+  width:15%;
+  z-index: 2;
+}
+.slider::before{
+  left:0;
+  top:0;
+}
+.slider::after{
+  right:0;
+  top:0;
+  transform:rotatez(180deg);
+}
+.caption{
+ position: absolute;
+ bottom:8px;
+ right:16px;
+ font-size: large;
+ font-weight: 1000;
+ color:rgb(51, 34, 12);
+ margin-top: 70px;
+}
+
+  .fa {
+    padding: 20px;
+    font-size: 20px;
+    width:30px;
+    text-align: center;
+    text-decoration: none;
+    
+  }
+  
+  /* Add a hover effect if you want */
+  .fa:hover {
+    opacity: 0.7;
+  }
+  
+  /* Set a specific color for each brand */
+  
+  /* Facebook */
+  .fa-facebook {
+    color: rgb(10, 10, 10);
+  }
+  
+  /* Twitter */
+  .fa-twitter {
+    
+    color: rgb(7, 7, 7);
+  }
+    #ukwu{
+      background-color: #5a3504;
+      clear:both;
+      border-top: 2px solid rgb(247, 241, 241);
+      text-align: center;
+      padding: 20px;
+  }
+  
