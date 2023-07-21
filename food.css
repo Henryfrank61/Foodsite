@@ -13,7 +13,7 @@ body {
   height: 70px;
   width: 100%;
   background-color:coral;
-  position:relative;
+  position:fixed;
   z-index: 999;
 }
 
@@ -239,6 +239,7 @@ img:hover{
   font-size:larger;
   color: rgb(7, 6, 7); 
 }
+
 #book{
   text-align: center;
   font-size: x-large;

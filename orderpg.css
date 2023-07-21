@@ -4,11 +4,12 @@ body{
 }
   
   .nav {
+    position:fixed;
+    top:0;
     margin-top: 0%;
     height: 70px;
     width: 100%;
     background-color:coral;
-    position:relative;
     z-index: 999;
   }
   
@@ -95,10 +96,10 @@ body{
   }
 .welcome{
     text-align: left;
-    background-color: bisque;
-    font-size: medium;
+    /* background-color: */
+    font-size:small;
     font-weight: 500;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     padding-top: 2px;
 }
 .slider{
@@ -135,9 +136,6 @@ body{
   padding: 15px;
   perspective:100px;
   position:relative;
-  text-align: center;
-
-
 }
 img{
   width:100%;
@@ -166,13 +164,25 @@ img:hover{
   transform:rotatez(180deg);
 }
 .caption{
- position: absolute;
- bottom:8px;
- right:16px;
- font-size: large;
- font-weight: 1000;
- color:rgb(51, 34, 12);
- margin-top: 70px;
+  position: absolute; /* Position the background text */
+  bottom: 0; /* At the bottom. Use top:0 to append it to the top */
+  background: rgb(0, 0, 0); /* Fallback color */
+  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+  color: #f1f1f1; /* Grey text */
+  width: 100%; /* Full width */
+  padding: 20px; /* Some padding */
+}
+.naija{
+  font-size:lager;
+  font-weight:bolder;
+  color:#050505;
+  background-color: #eee;
+}
+.inter{
+  font-size: larger;
+  font-weight: bolder;
+  color:#050505;
+  background-color:#eee;
 }
 
   .fa {
