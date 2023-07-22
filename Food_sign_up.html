@@ -3,16 +3,14 @@
 <head runat="server">
     <title>Sign up form</title>
     <link rel="stylesheet" type="text/css" href="./sign_up_food.css" />
-    <script src="JavaScript.js"></script>
-   
-   
+    <script src="food.js"></script>  
 </head>
 <body>
     <div>
     <form id="form1" runat="server">
          <header id="nnoo">
             <h1 id="nnoo h1"> DE LIGHT KITCHEN AND RESTUARANT</h1>
-            <h4>We are local and international</h4>
+            <h4>We serve both local and international dishes</h4>
         </header>    
 
      
@@ -23,22 +21,13 @@
                     <form>
 
                 <label for="chk" aria-hidden="true">SIGN UP HERE:</label>               
-                <input type="text" name="txt" placeholder="User Name" required="">
-                <input type="email" name="email" placeholder="Email" required="" >                                              
-                <input type="password" name="psword" placeholder="Password" required="" >                   
-                <button>Sign up</button>  
+                <input type="text" name="txt" placeholder="User Name" required="" >
+                <input type="email" name="email" placeholder="Email" require="" >                                              
+                <input type="password" name="psword" placeholder="Password" id="password"  title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more required="" >   
+                <input type="password" name="psword" placeholder="confirm Password" id="confirm_password"  required="" >                 
+                <button onclick="verifyPassword()">Sign up</button>  
                     </form>
             </div> 
-
-            <div class="login">
-                <form>
-                    <label for="chk" aria-hidden="true">Login</label>
-                    <input type="email" name="email" placeholder="password" required="">
-                    <button>Login</button>
-                </form>
-
-            </div>
-    
                   
          <footer id="ukwu1">
         Website copyright 2022
