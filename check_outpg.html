@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<head runat="server">
+    <title>Check out page</title>
+    <!-- <link rel="stylesheet" type="text/css" href="./sign_up_food.css" /> -->
+    <!-- <script src="food.js"></script>   -->
+</head>
+<body>
+    <div>
+    <form id="form1" runat="server">
+         <header id="nnoo">
+            <h1 id="nnoo h1"> DE LIGHT KITCHEN AND RESTUARANT</h1>
+            <h4>We serve both local and international dishes</h4>
+        </header>    
+
+     
+            <div class="main">
+              
+                <div class="signup">
+           <form>
+
+                <label for="chk" aria-hidden="true">PLEASE COMPLETE THIS FORM:</label>               
+                <input type="text" name="txt" placeholder="User Name" required="" >
+                <input type="email" name="email" placeholder="Email" id="email" required="" >                                              
+                <input type="address" name="address" placeholder="Address" id="add" required="">
+                <input type="phone number"  name="pnumber" placeholder="phone number" required="">
+                <select placeholder="Seclect dish">
+                    <option value="Okro with semo">Okro soup</option>
+                    <option value="Egusi soup">Egusi soup</option>
+                    <option value="Onugbu with semo">Onugbu soup with semo</option>
+                    <option value="Banga stew">Banga stew with rice</option>
+                    <option value="Nsala soup">Nsala soup</option>
+                    <option value="Beans and plaintain">Beans and plantain</option>
+                    <option value="Rice with tomatoe stew">Rice with tomatoe stew</option>
+                </select>  
+                <input type="total" name="tot" placeholder="Total price" id="tot"> 
+                <button type="button" onclick="verifyPassword()">Place an order</button>  
+                    </form>
+            </div> 
+                  
+         <footer id="ukwu1">
+        Website copyright 2022
+        </footer>
+ </form>    
+   </div>
+</body>
+</html>

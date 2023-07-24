@@ -12,12 +12,11 @@
   function verifyPassword() {
     var password = document.getElementById("password").value;
     var confirmPassword = document.getElementById("confirm_password").value;
-   
-    if (password == "") {
-        alert("Error: The password field is Empty.");
-    } else if (password == confirmPassword) {
+    var mail = document.getElementById("email").value;
+   if ()
+    if (password == confirmPassword) {
         alert("Registration successful!");
     } else {
-        alert("Please make sure your passwords match.")
+        alert("Password does not match!")
     }
 }
