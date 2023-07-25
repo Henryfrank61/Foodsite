@@ -2,6 +2,7 @@
 <head runat="server">
     <title>Login</title>
     <link rel="stylesheet" type="text/css" href="./sign_up_food.css" />
+    <script src="food.js"></script>  
    
     <style type="text/css">
       
@@ -17,11 +18,11 @@
         </header>    
    
         <div class="login">
-            <form>
+            <form id="login-form" action="orderpg.html">
                 <label for="chk" aria-hidden="true">Login</label>
-                <input type="Usename" name="username" placeholder="Usename" required="">
-                <input type="email" name="email" placeholder="password" required="">
-                <button>Login</button>
+                <input type="Usename" name="username" placeholder="Username" id="username" required="">
+                <input type="password" name="email" placeholder="password"  id="pword" required="">
+                <button onclick="refer(event)">Login</button>
             </form>
 
         </div>

@@ -1,46 +1,72 @@
 <!DOCTYPE html>
 <head runat="server">
     <title>Check out page</title>
-    <!-- <link rel="stylesheet" type="text/css" href="./sign_up_food.css" /> -->
+    <link rel="stylesheet" type="text/css" href="check_outpg.css" />
     <!-- <script src="food.js"></script>   -->
 </head>
 <body>
-    <div>
-    <form id="form1" runat="server">
-         <header id="nnoo">
-            <h1 id="nnoo h1"> DE LIGHT KITCHEN AND RESTUARANT</h1>
-            <h4>We serve both local and international dishes</h4>
-        </header>    
-
-     
-            <div class="main">
-              
-                <div class="signup">
-           <form>
-
-                <label for="chk" aria-hidden="true">PLEASE COMPLETE THIS FORM:</label>               
-                <input type="text" name="txt" placeholder="User Name" required="" >
-                <input type="email" name="email" placeholder="Email" id="email" required="" >                                              
-                <input type="address" name="address" placeholder="Address" id="add" required="">
-                <input type="phone number"  name="pnumber" placeholder="phone number" required="">
-                <select placeholder="Seclect dish">
-                    <option value="Okro with semo">Okro soup</option>
-                    <option value="Egusi soup">Egusi soup</option>
-                    <option value="Onugbu with semo">Onugbu soup with semo</option>
-                    <option value="Banga stew">Banga stew with rice</option>
-                    <option value="Nsala soup">Nsala soup</option>
-                    <option value="Beans and plaintain">Beans and plantain</option>
-                    <option value="Rice with tomatoe stew">Rice with tomatoe stew</option>
-                </select>  
-                <input type="total" name="tot" placeholder="Total price" id="tot"> 
-                <button type="button" onclick="verifyPassword()">Place an order</button>  
-                    </form>
-            </div> 
+    <header>
+        <nav>
+            <div class="nav">
+                <input type="checkbox" id="nav-check">
+                <div class="nav-header">
+                  <div class="nav-title">
+                    <img src="chef-logo.jpeg" alt="Chef logo" width="117" height="58">
+              </div>  
+                </div>     
+        
+          
+               
+                <div class="nav-btn">
+                  <label for="nav-check">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </label>
+                </div>
+                
+                <div class="nav-links">
+                  <a href="index.html">Home</a>
+                <a href="http://stackoverflow.com/users/4084003/">Order/services</a>
+                  <a href="my.loginpg.html">Login</a>
+                  <a href="Food_sign_up.html">Sign Up</a>
+                  <a href="https://codepen.io/jo_Geek/">About Us</a>
                   
-         <footer id="ukwu1">
-        Website copyright 2022
-        </footer>
- </form>    
+                </div>
+                </nav>     
+            </header>
+             
+                   <div class="main">
+                    <input type="checkbox" id="chk" aria-hidden="true">
+
+                    <div class="signup">
+                   <form>
+        
+                        <label for="chk" aria-hidden="true">PLEASE COMPLETE THIS FORM:</label>               
+                        <input type="text" name="txt" placeholder="User Name" required="" >
+                        <input type="email" name="email" placeholder="Email" id="email" required="" >                                              
+                        <input type="address" name="address" placeholder="Address" id="add" required="">
+                        <input type="phone number"  name="pnumber" placeholder="phone number" required="">
+                        <select placeholder="Seclect dish">
+                            <option value="Okro with semo">Okro soup</option>
+                            <option value="Egusi soup">Egusi soup</option>
+                            <option value="Onugbu with semo">Onugbu soup with semo</option>
+                            <option value="Banga stew">Banga stew with rice</option>
+                            <option value="Nsala soup">Nsala soup</option>
+                            <option value="Beans and plaintain">Beans and plantain</option>
+                            <option value="Rice with tomatoe stew">Rice with tomatoe stew</option>
+                        </select>  
+                        <input type="total" name="tot" placeholder="Total price" id="tot"> 
+                        <button type="button" onclick="verifyPassword()">Place an order</button>  
+                            </form>
+                    </div> 
+                          
+                 <footer id="ukwu1">
+                Website copyright 2022
+                </footer>
+         </form>    
+           </div>
+     </form>
    </div>
 </body>
 </html>
